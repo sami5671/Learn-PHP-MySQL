@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>An Addition Program</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var firstNumber, // first string entered by user
+        secondNumber, // second string entered by user
+        number1, // first number to add
+        number2, // second number to add
+        sum; // sum of number1 and number2
+
+      // read in first number from user as a string
+      firstNumber = window.prompt("Enter first integer", "0");
+
+      // read in second number from user as a string
+      secondNumber = window.prompt("Enter second integer", "0");
+
+      // convert numbers from strings to integers
+      number1 = parseInt(firstNumber, 10);
+      number2 = parseInt(secondNumber, 10);
+
+      // calculate the sum
+      sum = number1 + number2;
+
+      // display the sum
+      document.writeln("<p>The sum is " + sum + "</p>");
+    </script>
+  </body>
+</html>
